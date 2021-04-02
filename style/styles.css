@@ -1,0 +1,151 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+/* font-family: 'Sofia', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* font-family: 'Roboto Condensed', sans-serif; */
+/* end of IMPORTS */
+
+/* Custom Properties */
+:root {
+    /* fonts */
+    --main-font: 'Sofia', cursive;
+    --secondary-font: 'Montserrat', sans-serif;
+    --bold-font: 'Roboto Condensed', sans-serif;
+
+    /* clors */
+    --primary-color: #1B998B;
+    --secondary-color: #E5FCF5;
+}
+/* end of Custom Properties */
+
+/* Initial styles */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #dbf9b8; */
+    /* background-color: var(--secondary-color); */
+    background-color: #55d6c2;
+}
+/* end of Initial styles */
+
+/* REGISTER page styles */
+
+.reg-main{
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+/* reg-heading section */
+.reg-main > .reg-heading {
+    grid-column: 1/13;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.reg-heading > h1 {
+    font-family: var(--main-font);
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+}
+/* end of reg-heading section */
+
+/* img-section */
+.reg-main > .img-section {
+    grid-column: 1/6;
+    background-image: url('style/img/deliver3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+/* end of img-section */
+
+/* form-section */
+.reg-main > .form-section {
+    grid-column: 6/13;
+    background-color: var(--secondary-color);
+    /* background-color: #dbf9b8; */
+    border-radius: 5px;
+}
+
+.form-section > form {
+
+}
+
+.form-section form > section:nth-child(1) {
+    margin-top: 10%;
+}
+
+.form-section form > section {
+    margin-top: 3%;
+}
+
+.form-section form section > label {
+    font-family: var(--bold-font);
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-left: 10%;
+}
+
+.form-section form section > input {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 10%;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    /* background-color: #dbf9b8; */
+}
+
+.form-section form section > input:focus {
+    outline: none;
+}
+
+.form-section form section > button {
+    line-height: 1;
+    border: none;
+    background: none;
+    margin-left: 10%;
+    font-family: var(--secondary-font);
+    font-size: medium;
+    background-color: var(--primary-color);
+    padding: .5em 1em;
+    border-radius: 9999px;
+    font-weight: 500;
+    color: white;
+}
+
+.form-section form section > button:hover {
+    cursor: pointer;
+}
+
+.form-section form section > span {
+    margin-left: 2%;
+}
+
+.form-section form section span > a {
+    text-decoration: none;
+    border-bottom: 1px solid darkblue;
+    font-family: var(--main-font);
+    font-size: .9rem;
+    color: darkblue;
+}
+
+.form-section form > section:nth-child(6) {
+    margin-bottom: 10%;
+}
+/* end of form-section */
+
+/* end of REGISTER page styles */
